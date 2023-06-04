@@ -36,7 +36,7 @@
 
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
     <a class="navbar-brand" href="#">Logo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
   <!-- Sección de Inicio -->
   <section id="inicio" class="py-5 text-center">
     <div class="container">
-      <h1>Bienvenido a tu sitio web</h1>
+      <h1>Bienvenido a mi sitio web</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget nisi dignissim, cursus lectus at,
         consequat lorem.</p>
     </div>
@@ -118,6 +118,7 @@
 
   <!-- llamar al pie de pagina -->
   <?php include 'footer.php'; ?>
+  
 </body>
 
 </html>
