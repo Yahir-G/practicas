@@ -4,40 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Sitio Web</title>
+  <title>Pagina web</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet">
   <!-- Estilos personalizados -->
   <style>
     /*pie de pagina */
-    footer {
-        background-color: #2d3e50;
-        color: #fff;
-        padding: 20px;
-        font-size: 16px;
-}
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-}
-
-    .col-sm-6 {
-        flex-basis: 50%;
-        padding: 10px;
-}
-
-    .footer-text {
-        margin-bottom: 10px;
-        line-height: 1.5;
-}
+    
   </style>
 </head>
 
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
-    <a class="navbar-brand" href="#">Logo</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="">
+    <img src="img/logo.jpeg" alt="Logotipo" width="50">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#hero">Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#servicios">Servicios</a>
@@ -57,57 +40,83 @@
     </div>
   </nav>
 
-  <!-- Sección de Inicio -->
-  <section id="inicio" class="py-5 text-center">
-    <div class="container">
-      <h1>Bienvenido a mi sitio web</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget nisi dignissim, cursus lectus at,
-        consequat lorem.</p>
+  <section id="hero" class="hero">
+  <div class="info d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2 data-aos="fade-down">Bienvenido a mi <br><span>sitio web</span></h2>
+                        <p data-aos="fade-up">Yahir Guzman Gutierrez 9-B <br>Somos un equipo de 
+                        profesionales apasionados por la tecnología y con amplia experiencia en 
+                        el campo de la reparación de computadoras. Nuestro objetivo es brindarte 
+                        soluciones rápidas y efectivas para todos los problemas que puedas enfrentar con tu equipo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- CARUSEL DE FOTOS -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-item active" style="background-image: url(img/template1.jpg)"></div>
     </div>
   </section>
 
   <!-- Sección de Servicios -->
   <section id="servicios" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center">Nuestros Servicios</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h4 class="card-title">Servicio 1</h4>
-              <p class="card-text">Descripción del servicio 1.</p>
-            </div>
+  <div class="container">
+    <h2 class="text-center mb-5">Nuestros Servicios</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Servicio de Reparación de Hardware</h4>
+            <p class="card-text text-justify">Nuestro servicio de reparación de hardware 
+              se enfoca en solucionar problemas físicos y componentes defectuosos 
+              en tu computadora. Nuestros técnicos altamente capacitados pueden diagnosticar 
+              y reparar fallas en la placa madre, memoria RAM, disco duro, tarjeta gráfica y 
+              otros componentes esenciales. Te brindamos soluciones rápidas y efectivas para 
+              asegurarte de que tu computadora funcione correctamente nuevamente.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h4 class="card-title">Servicio 2</h4>
-              <p class="card-text">Descripción del servicio 2.</p>
-            </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Servicio de Eliminación de Virus y Malware</h4>
+            <p class="card-text text-justify">Los virus y malware pueden afectar seriamente el rendimiento 
+              de tu computadora y comprometer tu seguridad en línea. Nuestro servicio de 
+              eliminación de virus y malware utiliza herramientas avanzadas para detectar y 
+              eliminar cualquier amenaza presente en tu sistema.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h4 class="card-title">Servicio 3</h4>
-              <p class="card-text">Descripción del servicio 3.</p>
-            </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Servicio de Optimización y Mantenimiento Preventivo</h4>
+            <p class="card-text text-justify">Nuestra tarea no solo consiste en reparar computadoras cuando se rompen, 
+              también nos preocupamos por mantener tu equipo funcionando de manera óptima. 
+              Con nuestro servicio de optimización y mantenimiento preventivo, 
+              realizamos limpieza de archivos innecesarios, desfragmentación de disco, actualizaciones 
+              de software y control de procesos en segundo plano para mejorar el rendimiento general de tu computadora.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Sección de Acerca de -->
   <section id="acerca-de" class="py-5">
     <div class="container">
       <h2 class="text-center">Acerca de Nosotros</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget nisi dignissim, cursus lectus at,
-        consequat lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed
-        scelerisque facilisis erat, a tincidunt risus lacinia ac. Morbi tempor nisl eu commodo commodo. Suspendisse
-        eget
-        eros in mi posuere sollicitudin.</p>
+      <p class="text-justify">Explora nuestro sitio web para conocer más sobre los servicios que ofrecemos y cómo podemos ayudarte. 
+        Si tienes alguna pregunta o necesitas asesoramiento, no dudes en ponerte en contacto con nuestro equipo amable y capacitado.
+        ¡Gracias por visitarnos! Estamos emocionados de ser tu aliado confiable en la reparación y mantenimiento de tu computadora. 
+        Confía en nosotros y deja que nuestros expertos resuelvan cualquier problema que puedas tener. Tu satisfacción es nuestra prioridad.
+        ¡Bienvenido a nuestro mundo de soluciones tecnológicas!</p>
     </div>
   </section>
 
